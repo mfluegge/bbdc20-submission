@@ -59,7 +59,7 @@ def train_models(features, targets, left_encoder, right_encoder, seed,
             x_train += list(data.values())
 
             if subject == "s05":
-                sample_weight += ([2] * len(data.values()))
+                sample_weight += ([1] * len(data.values()))
             else:
                 sample_weight += ([1] * len(data.values()))
 
